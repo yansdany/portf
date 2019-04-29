@@ -26,3 +26,30 @@ main{
 .item{
     background-color: #fff;
 }
+
+.hosting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0264FB;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hosting__logo {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    transition: 500ms;
+}
+
+.hosting__logo:hover {
+    transform: scale(1.1);
+}
+
+.hosting__logo::after {
+    content: ".";
+    font-size: 70px;
+    position: relative;
+    color: #FFB03A;
+}
