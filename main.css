@@ -34,7 +34,7 @@ body{
 
 header{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -107,6 +107,11 @@ section{
     transition: .1s;
 }
 
+.works a{
+    transition: .1s;
+}
+
+.works a:hover,
 .works div:hover{
     box-shadow:
     1px 1px #00FFD1,
@@ -121,12 +126,18 @@ section{
   transform-origin: right bottom;
 }
 
-.works div:nth-child(1){
-    background-image: url(src/cat_1.png);
+.works a:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
 
-.works div:nth-child(2){
-    background-image: url(src/cat_2.png);
+.works a:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0264FB;
 }
 
 .works div:nth-child(3){
@@ -147,4 +158,30 @@ section{
 
 .works div span{
     margin: 15px;
+}
+
+/*--------HOSTING---------*/
+
+.hosting__logo {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    transition: 500ms;
+}
+
+.hosting__logo::after {
+    content: ".";
+    font-size: 70px;
+    position: relative;
+    left: 0px;
+    color: #FFB03A;
+}
+
+/*----------LIMS-------*/
+
+.lims__logo{
+    color: #12A9EB;
+    font-size: 48px;
+    font-weight: 600;
+    transition: 500ms;
 }
